@@ -1,10 +1,11 @@
 #clock-container {
-    width: 75%;
-    height: 30vh;
-    margin: 0 auto;
-    border: 1px solid #e8e8e8;
-    font-size: 130px;
+}
+
+#clock-container label {
+}
+
+#clock-display {
+    font-size: 100px;
+    line-height: 150px;
     text-align: center;
-    font-family: sans-serif;
-    line-height: 30vh;
 }

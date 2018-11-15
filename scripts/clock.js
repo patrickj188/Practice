@@ -1,5 +1,6 @@
 var clockContainer = document.getElementById('clock-container');
-var clock = document.createElement('div'); // I'm just a div...
+var clockDisplay = document.createElement('div'); // I'm just a div...
+var clockLabel = document.createElement('label');
 
 var ONE_SECOND = 1000; // javascript usually deals in milliseconds
 
@@ -15,13 +16,16 @@ function updateClockTime() {
     // var output = hours + ':' + minutes + ':' + seconds; // the other way to use variables in a string
     
     // The bread n butter... change the textContent of our clock element
-    clock.textContent = outputTime;
+    clockDisplay.textContent = outputTime;
 }
 
 // this weird syntax of wrapping the function definition in parenthesis is called IIFE - look it up)
 // this causes main to run immediately after it is defined
 (function main() {
-    clockContainer.appendChild(clock); // we created "clock" element above, but now we need to append it to something already in the DOM
+    clockDisplay.id = 'clock-display'; // set the id for our newly created element
+    clockLabel.textContent = 'Clock';
+    clockContainer.appendChild(clockLabel);
+    clockContainer.appendChild(clockDisplay); // we created "clockDisplay" div element above, but now we need to append it to something already in the DOM- otherwise it just floats around here
     updateClockTime();
     window.setInterval(updateClockTime, ONE_SECOND); // Run our "updateClockTime function every second"
 })()

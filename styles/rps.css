@@ -1,0 +1,15 @@
+#rps-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rps-button {
+    display: block;
+    background: salmon;
+    color: white;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 50px;
+}

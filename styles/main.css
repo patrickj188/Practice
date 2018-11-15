@@ -1,0 +1,22 @@
+/* Global styles go here */
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.component {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #e8e8e8;
+    border-top: none;
+    position: relative;
+}
+
+.component label {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: salmon;
+}

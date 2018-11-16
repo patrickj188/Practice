@@ -9,8 +9,16 @@ var sliderLabel = document.createElement('label');
  */
 var LEFT_POSITION = '20%';
 var RIGHT_POSITION = '80%';
-var LEFT_COLOR = 'steelblue';
-var RIGHT_COLOR = 'salmon';
+var LEFT_COLOR = 'salmon';
+var RIGHT_COLOR = 'steelblue';
+var LIGHT_THEME = {
+    BACKGROUND: 'white',
+    TEXT: 'black'
+};
+var DARK_THEME = {
+    BACKGROUND: '#2f2f2f', // very dark gray
+    TEXT: 'white'
+};
 
 // the styles can be set in CSS file, but I chose to do it here for visibility
 function initializeSlider() {
@@ -26,7 +34,17 @@ function slide() {
     // this is called a Ternary. It can replace a simple if/else statement
     slider.style.left = slider.isLeft ? RIGHT_POSITION : LEFT_POSITION;
     slider.style.background = slider.isLeft ? RIGHT_COLOR : LEFT_COLOR;
+
+    toggleTheme(slider.isLeft); // pass in current state of slider- > this becomes "toggle" within the toggleTheme function
+
     slider.isLeft = !slider.isLeft; // flip the boolean
+}
+
+function toggleTheme(toggle) {
+    // for shits and gigs lets toggle a light theme / dark theme
+    // we always have access to the global scope (document)
+    document.body.style.background = (toggle === true) ? DARK_THEME.BACKGROUND : LIGHT_THEME.BACKGROUND;
+    document.body.style.color = (toggle === true) ? DARK_THEME.TEXT : LIGHT_THEME.TEXT;
 }
 
 (function main() {

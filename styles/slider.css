@@ -1,0 +1,18 @@
+#slider-container {
+
+}
+
+#slider {
+    width: 100px;
+    height: 100px;
+    transition: background 1s ease, left 1s ease, transform 200ms ease;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transform-origin: center;
+}
+
+#slider:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}

@@ -1,5 +1,9 @@
 /* Global styles go here */
 
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     padding: 0;
     margin: 0;
@@ -18,6 +22,7 @@ html, body {
     box-sizing: border-box;
     border-top: none;
     position: relative;
+    overflow: hidden;
 }
 
 .component label {
@@ -25,4 +30,5 @@ html, body {
     top: 10px;
     left: 20px;
     color: salmon;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
 }

@@ -1,0 +1,17 @@
+#gallery-container {
+    background: rgb(29, 29, 29);
+}
+
+#gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+#gallery .image {
+    width: 200px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: width 200ms ease;
+}

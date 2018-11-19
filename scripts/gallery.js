@@ -26,10 +26,12 @@ imageList.forEach(function(image) {
 // Difficult subject- but you will need to read up on JavaScript "Context" and "this"
 function onHover() {
     this.style.width = '250px'
+    this.style.filter = 'grayscale(0)'
 }
 
 function offHover() {
     this.style.width = '200px'
+    this.style.filter = 'grayscale(1)'
 }
 
 function getImageList() {

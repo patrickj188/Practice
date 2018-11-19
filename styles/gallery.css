@@ -13,5 +13,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    transition: width 200ms ease;
+    transition: width 200ms ease, filter 500ms ease;
+    filter: grayscale(1)
 }

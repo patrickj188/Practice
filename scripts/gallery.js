@@ -18,6 +18,7 @@ imageList.forEach(function(image) {
     var div = document.createElement('div');
     div.classList.add('image');
     div.style.backgroundImage = `url(${image})`;
+    div.style.width = `calc(100% / ${imageList.length})`;
     div.onmouseover = onHover;
     div.onmouseout = offHover;
     gallery.appendChild(div);
@@ -25,12 +26,12 @@ imageList.forEach(function(image) {
 
 // Difficult subject- but you will need to read up on JavaScript "Context" and "this"
 function onHover() {
-    this.style.width = '250px'
+    this.style.width = `calc(100% / ${imageList.length} + 50px)`;
     this.style.filter = 'grayscale(0)'
 }
 
 function offHover() {
-    this.style.width = '200px'
+    this.style.width = `calc(100% / ${imageList.length})`;
     this.style.filter = 'grayscale(1)'
 }
 

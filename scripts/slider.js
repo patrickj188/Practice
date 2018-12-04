@@ -1,5 +1,6 @@
 var sliderContainer = document.getElementById('slider-container');
 var slider = document.createElement('div');
+var sliderTrack = document.createElement('div');
 var sliderLabel = document.createElement('label');
 
 /*
@@ -50,6 +51,8 @@ function toggleTheme(toggle) {
 (function main() {
     initializeSlider();
     sliderLabel.textContent = 'Slider';
+    sliderTrack.id = 'slider-track';
     sliderContainer.appendChild(slider);
+    sliderContainer.appendChild(sliderTrack);
     sliderContainer.appendChild(sliderLabel);
 })();

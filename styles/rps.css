@@ -12,5 +12,11 @@
     font-size: 30px;
     font-weight: bold;
     padding: 20px 50px;
-    border: none;
+    border: 0px solid rgb(255, 181, 181);
+    cursor: pointer;
+    transition: border 200ms ease;
+}
+
+#rps-button:hover {
+    border: 4px solid rgb(255, 181, 181);
 }

@@ -16,8 +16,13 @@
         <link rel="stylesheet" href="./styles/rps.css">
         <link rel="stylesheet" href="./styles/slider.css">
         <link rel="stylesheet" href="./styles/gallery.css">
+        <link rel="stylesheet" href="./styles/madlib.css">
+        <link rel="stylesheet" href="./styles/photon.css">
+
         <!-- Add more styling links as you go -->
-        <link rel="stylesheet" href="">
+        <script src="./secrets/particle_auth.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/particle-api-js/5/particle.min.js">
+        </script>
     </head>
     <body>
 
@@ -26,11 +31,18 @@
         <div id="clock-container" class="component"></div>
         <div id="slider-container" class="component"></div>
         <div id="gallery-container" class="component"></div>
+        <!-- <div id="madlib-container" class="component"></div> -->
+        <div id="soil-read-container" class="component">
+            <button onclick="getSoilReading()">GET SOIL READING!</button>
+        </div>
         
         <script src="./scripts/clock.js" async defer></script>
         <script src="./scripts/rps.js" async defer></script>
         <script src="./scripts/slider.js" async defer></script>
         <script src="./scripts/gallery.js" async defer></script>
+        <script src="./scripts/madlib.js" async defer></script>
+        <script src="./scripts/photon.js" async defer></script>
+
         <!-- Add more scripts as you make stuff -->
         <script src="" async defer></script>
     </body>

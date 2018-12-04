@@ -5,12 +5,25 @@
 #slider {
     width: 100px;
     height: 100px;
+    border-radius: 50%;
     transition: background 1s ease, left 1s ease, transform 200ms ease;
     cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
     transform-origin: center;
+    z-index: 1;
+}
+
+#slider-track {
+    background: #a0a0a03d;
+    height: 10px;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
 }
 
 #slider:hover {

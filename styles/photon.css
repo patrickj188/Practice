@@ -1,0 +1,17 @@
+#soil-read-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 20px;
+}
+
+#soil-read-container button {
+  width: 40%;
+  height: 80px;
+  background: steelblue;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+
+}

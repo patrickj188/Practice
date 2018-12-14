@@ -2,48 +2,64 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-        <link rel="stylesheet" href="./styles/main.css">
-        <link rel="stylesheet" href="./styles/clock.css">
-        <link rel="stylesheet" href="./styles/rps.css">
-        <link rel="stylesheet" href="./styles/slider.css">
-        <link rel="stylesheet" href="./styles/gallery.css">
-        <link rel="stylesheet" href="./styles/madlib.css">
-        <link rel="stylesheet" href="./styles/photon.css">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 
-        <!-- Add more styling links as you go -->
-        <script src="./secrets/particle_auth.js"></script>
-        <script type="text/javascript" src="//cdn.jsdelivr.net/particle-api-js/5/particle.min.js">
-        </script>
-    </head>
-    <body>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/clock.css">
+    <link rel="stylesheet" href="./styles/rps.css">
+    <link rel="stylesheet" href="./styles/slider.css">
+    <link rel="stylesheet" href="./styles/gallery.css">
+    <link rel="stylesheet" href="./styles/madlib.css">
+    <link rel="stylesheet" href="./styles/photon.css">
 
-        <!-- We arent defining any inner elements for the components here ... JS will take care of that -->
-        <div id="rps-container" class="component"></div>
-        <div id="clock-container" class="component"></div>
-        <div id="slider-container" class="component"></div>
-        <div id="gallery-container" class="component"></div>
-        <!-- <div id="madlib-container" class="component"></div> -->
-        <div id="soil-read-container" class="component">
-            <button onclick="getSoilReading()">GET SOIL READING!</button>
-        </div>
-        
-        <script src="./scripts/clock.js" async defer></script>
-        <script src="./scripts/rps.js" async defer></script>
-        <script src="./scripts/slider.js" async defer></script>
-        <script src="./scripts/gallery.js" async defer></script>
-        <script src="./scripts/madlib.js" async defer></script>
-        <script src="./scripts/photon.js" async defer></script>
+    <!-- Add more styling links as you go -->
+    <script src="./secrets/particle_auth.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/particle-api-js/5/particle.min.js">
 
-        <!-- Add more scripts as you make stuff -->
-        <script src="" async defer></script>
-    </body>
+
+
+    </script>
+</head>
+
+<body>
+
+    <!-- We arent defining any inner elements for the components here ... JS will take care of that -->
+    <div id="rps-container" class="component"></div>
+    <div id="clock-container" class="component"></div>
+    <div id="slider-container" class="component"></div>
+    <div id="gallery-container" class="component"></div>
+    <!-- <div id="madlib-container" class="component"></div> -->
+    <div id="soil-read-container" class="component">
+        <button onclick="getSoilReading()">GET SOIL READING!</button>
+    </div>
+
+    <div id="stopwatch-container">
+
+        <h1><time>00:00:00</time></h1>
+        <button id="start">start</button>
+        <button id="stop">stop</button>
+        <button id="clear">clear</button>
+    </div>
+
+    <script src="./scripts/clock.js" async defer></script>
+    <script src="./scripts/rps.js" async defer></script>
+    <script src="./scripts/slider.js" async defer></script>
+    <script src="./scripts/gallery.js" async defer></script>
+    <script src="./scripts/madlib.js" async defer></script>
+    <script src="./scripts/photon.js" async defer></script>
+
+    <!-- Add more scripts as you make stuff -->
+    <script src="" async defer></script>
+</body>
+
 </html>

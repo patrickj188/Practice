@@ -12,11 +12,12 @@ particle
   .then(data => token = data.body.access_token), err => console.error('login', err);
 
 const getSoilReading = () => {
-  particle
-    .getVariable({ deviceId: PARTICLE_DEVICE_ID, name: 'soil_read', auth: token })
-    .then(data => {
-      console.log('Device variable retrieved successfully:', data);
-      component.textContent = data.body.result + '\n\n  Sick doggie! If you see this number, this is getting reported from the houseplant in the bathroom. Doesn\'t do us much good at the moment though'
+  fetch("https://api.particle.io/v1/devices/3f0023000547353138383138/getMoisture?access_token=f50e6bd841e35fd9b8366ce7f823561d92ef32f1 -d arg=''")
+    .then(res => {
+      if (res.status === 200) {
+        console.log('Device variable retrieved successfully:', res);
+        component.textContent = data.body.return_value + '\n\n  Sick doggie! If you see this number, this is getting reported from the houseplant in the bathroom. Doesn\'t do us much good at the moment though'
+      }
     }, err => {
       console.log('An error occurred while getting attrs:', err);
     });

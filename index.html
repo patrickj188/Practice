@@ -50,6 +50,15 @@
         <button id="clear">clear</button>
     </div>
 
+
+    <h2>Tip Calculator</h2>
+Enter the bill amount for your meal: $
+<input type="text" id="bill"><br>
+Tip Percentage: 
+<input type="range" min="0" max="100" value="0" step="1" onchange="tipCalculate(this.value,'bill')" style="width:400px;">
+<span id="slideval">0%</span>
+<h2>Tip to leave = <span id="tip"></span></h2>
+
     <script src="./scripts/clock.js" async defer></script>
     <script src="./scripts/rps.js" async defer></script>
     <script src="./scripts/slider.js" async defer></script>
@@ -57,6 +66,7 @@
     <script src="./scripts/madlib.js" async defer></script>
     <script src="./scripts/photon.js" async defer></script>
     <script src="./scripts/stopwatch.js" async defer></script>
+    <script src="./scripts/tipCal.js" async defer></script>
 
     <!-- Add more scripts as you make stuff -->
     <script src="" async defer></script>

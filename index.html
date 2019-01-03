@@ -24,6 +24,7 @@
 
     <!-- Add more styling links as you go -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/particle-api-js/5/particle.min.js">
+
     </script>
 
 
@@ -50,14 +51,15 @@
         <button id="clear">clear</button>
     </div>
 
-
-    <h2>Tip Calculator</h2>
-Enter the bill amount for your meal: $
-<input type="text" id="bill"><br>
-Tip Percentage: 
-<input type="range" min="0" max="100" value="0" step="1" onchange="tipCalculate(this.value,'bill')" style="width:400px;">
-<span id="slideval">0%</span>
-<h2>Tip to leave = <span id="tip"></span></h2>
+    <div>
+        <h2>Tip Calculator</h2>
+        Enter the bill amount for your meal: $
+        <input type="text" id="bill"><br>
+        Tip Percentage:
+        <input type="range" min="0" max="100" value="0" step="1" onchange="tipCalculate(this.value,'bill')" style="width:400px;">
+        <span id="slideval">0%</span>
+        <h2>Tip to leave = <span id="tip"></span></h2>
+    </div>
 
     <script src="./scripts/clock.js" async defer></script>
     <script src="./scripts/rps.js" async defer></script>
